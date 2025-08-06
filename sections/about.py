@@ -2,7 +2,7 @@ import streamlit as st
 
 def show():
     st.title("👋 Hi, I'm Govind Rawat")
-    st.write("Senior IT Service Analyst | Data Science Enthusiast | Aspiring Developer")
+    st.write("#### Senior IT Service Analyst | Data Science Enthusiast | Aspiring Developer")
     st.image("assets/images.jpeg", width=150)
     st.markdown("""
     #### Summary
