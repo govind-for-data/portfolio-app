@@ -1,5 +1,5 @@
 import streamlit as st
-from sections import about, project, contact
+from sections import about, project #contact
 
 st.set_page_config(page_title="Govind Rawat", layout="wide")
 
@@ -16,12 +16,12 @@ st.set_page_config(page_title="Govind Rawat", layout="wide")
 # with col3:
 #     if st.button("Contact"):
 #         contact.show()
-selection = st.sidebar.radio("Navigate to", ["About Me", "Projects", "Contact"])
+selection = st.sidebar.radio("Navigate to", ["About Me", "Projects"]) #, "Contact"])
 
 # Conditional display based on sidebar selection
 if selection == "About Me":
     about.show()
 elif selection == "Projects":
     project.show()
-elif selection == "Contact":
-    contact.show()
+# elif selection == "Contact":
+#    contact.show()
