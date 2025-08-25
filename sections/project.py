@@ -1,4 +1,5 @@
 import streamlit as st
+import base64
 
 def show():
   st.title("Projects")
@@ -13,13 +14,27 @@ def show():
              ##### Techniques: 
             - Data cleaning, Exploratory Data Analysis, Descriptive statistics.
             """)
-    expand_1_1 = st.expander("Churn Predection")
-    expand_1_1.write("""
+    st.markdown("---")
+    st.markdown("### Cutomer Churn Predection")
+    st.write("""
                  -  Developed a machine learning model that accurately predicts customer churn for an ecommerce company and recommended targeted retention strategies to reduce churn rate.
                  - Selected relevant features and engineered new features to enhance model performance
                  - Utilized various machine learning algorithms such as logistic regression, random forest, LDA, KNN and bagging classifier.
                  - Tuned hyperparameters to optimize model performance. Achieved an accuracy of 88% in predicting customer churn.
-                 """)
+                    """)
+    with open("assets/Customer_Churn.pdf", "rb") as f:
+        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+        # Embed PDF in iframe
+        pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1000" type="application/pdf"></iframe>'
+        with st.expander("📄 View report"):
+          st.markdown(pdf_display, unsafe_allow_html=True)
+#          st.download_button("📥 Download Resume (PDF)", f, "resume.pdf", "application/pdf")
+
+    with open("assets/Customer_Churn.pdf", "rb") as f:
+      st.download_button("📥 Download PDF", f, "Customer_Churn.pdf", "assets/Customer_Churn.pdf")
+#      st.write("### Preview:")
+    st.markdown("---")
+      
     expand_1_2 = st.expander("User profiling")
     expand_1_2.write("""
                  -  Developed a machine learning model that accurately predicts customer churn for an ecommerce company and recommended targeted retention strategies to reduce churn rate.

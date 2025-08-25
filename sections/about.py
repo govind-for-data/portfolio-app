@@ -4,6 +4,7 @@ def show():
     st.title("👋 Hi, I'm Govind Rawat")
     st.write("#### Senior IT Service Analyst | Data Science Enthusiast | Aspiring Developer")
     st.image("assets/images.jpeg", width=350)
+    st.markdown("## Building Data Centric Applications")
     st.markdown("""
     #### Summary
     - 10+ years in IT service management  
