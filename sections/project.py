@@ -4,8 +4,10 @@ import base64
 def show():
   st.title("Projects")
   st.write("Data Analysis | Data Visualization | Machine Learning | SQL | PowerBI")
-  expand = st.expander("ℹ️ Information")
-  expand.write("""Inform about this short journy of transition""")
+  expand = st.expander("⚠️ *Disclaimer:*")
+  expand.write("""  
+This interactive resume is crafted with love ❤️ (and a lot of coffee ☕) using the **Streamlit** library.  
+So if something breaks, let’s just agree it’s not a bug — it’s a feature. 😅""")
     # Insert containers separated into tabs:
   tab1, tab2,tab3, tab4 = st.tabs(["Data Analysis", "Data Visualization", "Machine Learning", "Application Deployment"])
     # You can also use "with" notation:
