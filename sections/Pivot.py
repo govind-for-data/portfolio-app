@@ -8,7 +8,28 @@ def show():
     st.set_page_config(page_title="PIVOT", layout="wide")
 
     st.title("📊 Pivot Builder")
+    
+    st.markdown("""
+        ## 🌀 The Magical Pivot Builder
 
+        Welcome to the **Pivot-o-Matic 3000** 🎩✨ — where boring tables transform into jaw-dropping pivots with just a few clicks.  
+
+        Originally, this page was powered by the classic *“bring-your-own-file”* approach 📂.  
+        Yes, you had to lovingly upload your Excel/CSV like a parent dropping their kid off at school.  
+
+        But in my other project, I leveled up 🚀 — ditched the school run, plugged directly into the MS SQL cafeteria 🍜, and started serving **fresh, hot data** straight from the database!  
+
+        No more:
+        - Dragging files around like a caveman 🪨  
+        - Wondering *“is this the latest version or Pivot_Final_v9_revised2.csv?”* 😅  
+
+        Now it’s just:
+        - SQL view → Pandas DataFrame → Pivot table → Happiness ✅  
+
+        So whether you’re a fan of old-school file uploads or you’re living the cloud-connected dream, this page proves one thing: **Data loves to pivot.**  
+        """)
+
+    
     # 1) Get a DataFrame
     def _load_df():
         if "df" in st.session_state and isinstance(st.session_state["df"], pd.DataFrame):

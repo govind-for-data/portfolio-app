@@ -1,3 +1,32 @@
 ("object of type <class 'str'> cannot be converted to int", 'Conversion failed for column Purchase_date with type object')
 ("object of type <class 'str'> cannot be converted to int", 'Conversion failed for column Purchase_date with type object')
 No module named 'xlsxwriter'
+Error opening 'assets/1756729896853.jpeg'
+module 'sections.Search' has no attribute 'show'
+name 'src' is not defined
+name 'src' is not defined
+name 'src' is not defined
+name 'src' is not defined
+name 'src' is not defined
+LayoutsMixin.columns() missing 1 required positional argument: 'spec'
+LayoutsMixin.columns() missing 1 required positional argument: 'spec'
+name 'base64' is not defined
+list index out of range
+Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+No module named 'xlsxwriter'
+Error opening 'assets/1756729896853.jpeg'
